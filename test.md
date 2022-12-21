@@ -1,6 +1,8 @@
+---
 layout: page
 title: "page title"
 permalink: /testpage
+---
 
 # h1
 
