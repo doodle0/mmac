@@ -1,6 +1,6 @@
 layout: page
 title: "page title"
-permalink: /ok/testpage
+permalink: /testpage
 
 # h1
 
