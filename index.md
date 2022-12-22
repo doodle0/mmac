@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Home
+title: 홈
+heading: '명문학원'
+subheading: 'Your awesome subheading'
 banner: "/assets/images/banners/home.jpeg"
 ---
