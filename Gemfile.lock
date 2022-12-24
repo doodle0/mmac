@@ -90,7 +90,6 @@ PLATFORMS
   x86_64-darwin-22
 
 DEPENDENCIES
-  http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3)
   jekyll-feed (~> 0.12)
   jekyll-paginate-v2 (>= 3.0)
