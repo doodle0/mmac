@@ -5,6 +5,6 @@
 layout: home
 title: 홈
 heading: '명문올림피아드코딩학원'
-subheading: 'Your awesome subheading'
+subheading: '사이트 준비중입니다.'
 banner: "/assets/images/banners/home.jpeg"
 ---
