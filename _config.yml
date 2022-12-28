@@ -25,7 +25,7 @@ title: 명문올림피아드코딩학원
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.mmac.kr" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mmac.kr" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
