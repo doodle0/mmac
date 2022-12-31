@@ -1,0 +1,22 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+        {%- assign currentYear = 'now' | date: "%Y" -%}
+        {%- assign copyright = site.copyright
+            | replace: '{currentYear}', currentYear
+            | replace: '{author}', site.author
+            | replace: '(c)', '&copy;'
+            | replace: '(p)', '℗'
+            | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
+        -%}
+      <div>주소: [138-866] 서울 송파구 잠실동 234-14 2층&nbsp;&nbsp;&nbsp;&nbsp;대표자: 정경모</div>
+      <div>전화: 02-420-5225, 02-418-1571&nbsp;&nbsp;&nbsp;&nbsp;사업자번호: 219-98-02652</div>
+      <div>{{ copyright }}</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+    </div>
+  </div>
+</footer>
