@@ -1,7 +1,7 @@
 ---
 layout: about
 title: 강좌안내
-banner: "assets/images/banners/lectures.jpg"
+banner: "/assets/images/banners/lectures.jpg"
 ---
 
 <style>

@@ -2,17 +2,17 @@
 layout: about
 title: 학원소개
 banner:
-  image: "assets/images/banners/about.jpg"
+  image: "/assets/images/banners/about.jpg"
   opacity: 0.8
   height: "67vh"
   background: "#000"
 ---
 
 <style>
-  p.name {
+  .post .post-content p.name {
     text-align: center;
     color: blue;
-    font-size: 240%;
+    font-size: 200%;
   }
 </style>
 
@@ -61,12 +61,12 @@ im4u 명문정보영재교육센터는 주요 대학 교수진이 집필한 교�
 
 ## 오시는 길
 
-![오시는 길](assets/images/im4u_moon_map1.png)
-![오시는 길 설명](assets/images/moon_pica1-1.png)
+![오시는 길](/assets/images/im4u_moon_map1.png)
+![오시는 길 설명](/assets/images/moon_pica1-1.png)
 
 ## 학원 사진
 
-![학원 사진 1](assets/images/moon_pica1.jpg)
-![학원 사진 2](assets/images/moon_pica2.jpg)
-![학원 사진 3](assets/images/moon_pica3.jpg)
-![학원 사진 4](assets/images/moon_pica4.jpg)
+![학원 사진 1](/assets/images/moon_pica1.jpg)
+![학원 사진 2](/assets/images/moon_pica2.jpg)
+![학원 사진 3](/assets/images/moon_pica3.jpg)
+![학원 사진 4](/assets/images/moon_pica4.jpg)
