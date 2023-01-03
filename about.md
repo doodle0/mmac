@@ -1,13 +1,15 @@
 ---
 layout: about
 title: 학원소개
+banner_html: "about-banner.html"
 banner:
-  height: "67vh"         # Banner default height
+  height: "83vh"
+  min_height: "720px"
 ---
 
 ## 학원장 인사말
 
-안녕하세요. **<u>명문올림피아드정보처리학원</u>**이 송파구 잠실본동에 자리잡은지 **28**여년이 되었습니다.
+안녕하세요. **<u>명문올림피아드정보처리학원</u>**이 송파구 잠실본동에 자리잡은지 **32**여년이 되었습니다.
 
 모든 학부모님들께서 많이 사랑하여 주시고 격려하여 주셔서 지금의 명문올림피아드정보처리 학원이 있게 되었습니다.\
 <u>본학원의 특징과 장점은 원장겸 강사(<strong>정경모</strong>)는 25여년간 오랜 강사의 경험과 컴퓨터관련 출판사의 기획과 풍부한 경험을 토대로 <strong>C언어교재, 알고리즘기초, 워드, 컴활 자격증책 관련 집필</strong>하였으며</u>, 10년동안 송파구청 정부지원 2,500여명이 넘는 성인 학습자들의 대한 풍부한 경험이 많으며, 또한 학습자들의 수준을 철저히 분석하여 학습 요구을 파악하여 지도하여 교육에 대한 만족도가 최고를 자랑합니다.
@@ -55,7 +57,6 @@ im4u 명문정보영재교육센터는 주요 대학 교수진이 집필한 교�
 
 ## 학원 사진
 
-![학원 사진 1](/assets/images/moon_pica1.jpg)
 ![학원 사진 2](/assets/images/moon_pica2.jpg)
 ![학원 사진 3](/assets/images/moon_pica3.jpg)
 ![학원 사진 4](/assets/images/moon_pica4.jpg)
@@ -65,5 +66,12 @@ im4u 명문정보영재교육센터는 주요 대학 교수진이 집필한 교�
     text-align: center;
     color: blue;
     font-size: 200%;
+  }
+
+  .detail {
+    list-style: "–  ";
+  }
+  p + ul {
+    margin-top: -16px;
   }
 </style>
