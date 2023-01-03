@@ -1,0 +1,72 @@
+{%- include functions.html func='log' level='debug' msg='Get heading value' -%}
+{% assign name = 'heading' %}
+{%- include functions.html func='get_value' -%}
+{% assign heading = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get subheading value' -%}
+{% assign name = 'subheading' %}
+{%- include functions.html func='get_value' -%}
+{% assign subheading = return %}
+
+<div class="page-banner-default">
+  <h1 class="page-banner-heading">
+    {{ heading | default: page.title | escape }}
+  </h1>
+  <h2 class="page-banner-subheading">
+    &ndash; 32년 전통 최고의 강사진 구성<br>
+    &ndash; 영재고 선배들이 추천하는 학원<br>
+    &ndash; 정보올림피아드, 대학경시대회 수상자 다년간 배출
+  </h2>
+</div>
+
+<div class="home-btn-area">
+    <div class="home-btn">
+        <div class="home-btn-heading">전화번호</div>
+        <div class="home-btn-content">☎ 418-1571, 420-5225</div>
+    </div>
+    <div class="home-btn" onclick="location.href='/lectures.html'">
+        <div class="home-btn-heading">강좌안내</div>
+    </div>
+    <div class="home-btn" onclick="location.href='/onlinelec.html'">
+        <div class="home-btn-heading">온라인 학습</div>
+    </div>
+    <div class="home-btn" onclick="location.href='/notice.html'">
+        <div class="home-btn-heading">공지사항</div>
+    </div>
+</div>
+
+<style>
+    .home-btn-area {
+        display: flex;
+        height: 80px;
+        text-shadow: none;
+        margin-top: 16px;
+    }
+    .home-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        flex-grow: 1;
+        flex: 1;
+        text-align: center;
+
+        padding: 8px;
+        margin: 8px;
+
+        background: #00880088;
+        border: 1px solid #6a6;
+        cursor: pointer;
+        user-select: none;
+
+        transition: 200ms ease;
+    }
+    .home-btn:hover {
+        background-color: #008800ee;
+    }
+    .home-btn-heading {
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 120%;
+    }
+</style>
