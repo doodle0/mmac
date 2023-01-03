@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 명문올림피아드코딩학원
+title: 명문올림피아드정보처리학원
 # email: your-email@example.com
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
@@ -174,7 +174,7 @@ banner:
 #   loop: true              # Video loop
 #   volume: 0               # Video volume (100% is 1.0)
 #   start_at: 0             # Video start time
-#   image: null             # Image banner source
+  image: "/assets/images/banners/default.jpg"             # Image banner source
 #   opacity: 1.0            # Banner opacity (100% is 1.0)
   background: "rgba(32, 32, 32, 0.5)"  # Banner background (Could be a image)
   height: "33vh"         # Banner default height

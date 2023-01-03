@@ -1,11 +1,6 @@
 ---
 layout: about
 title: 학원소개
-banner:
-  image: "/assets/images/banners/about.jpg"
-  opacity: 0.8
-  height: "67vh"
-  background: "#000"
 ---
 
 <style>

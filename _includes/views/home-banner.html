@@ -54,16 +54,38 @@
         padding: 8px;
         margin: 8px;
 
-        background: #00880088;
+        background: #2518;
         border: 1px solid #6a6;
         cursor: pointer;
         user-select: none;
 
         transition: 200ms ease;
     }
-    .home-btn:hover {
-        background-color: #008800ee;
+    .home-btn:first-child {
+        margin-left: 0;
     }
+    .home-btn:last-child {
+        margin-right: 0;
+    }
+    .home-btn:hover {
+        background-color: #251e;
+    }
+    @media (max-width: 600px) {
+        .home-btn-area {
+            flex-direction: column;
+        }
+        .home-btn {
+            margin: 0;
+            padding: 4px;
+        }
+        .home-btn-heading {
+            font-size: 100% !important;
+        }
+        .home-btn-content {
+            font-size: 90%;
+        }
+    }
+
     .home-btn-heading {
         letter-spacing: 1px;
         font-weight: 600;
