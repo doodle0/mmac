@@ -15,12 +15,13 @@
   <h2 class="page-banner-subheading">
     &ndash; 32년 전통 최고의 강사진 구성<br>
     &ndash; 영재고 선배들이 추천하는 학원<br>
-    &ndash; 정보올림피아드, 대학경시대회 수상자 다년간 배출
+    &ndash; 정보올림피아드, 대학경시대회 수상자 다년간 배출<br>
+    &ndash; 정보처리기능사, 컴퓨터활용능력2급 자격증 수시 개강
   </h2>
 </div>
 
 <div class="home-btn-area">
-    <div class="home-btn">
+    <div class="home-btn" onclick="location.href='/about.html'">
         <div class="home-btn-heading">전화번호</div>
         <div class="home-btn-content">☎ 418-1571, 420-5225</div>
     </div>
@@ -36,9 +37,12 @@
 </div>
 
 <style>
+    .page-banner-subheading {
+        font-weight: 400 !important;
+    }
     .home-btn-area {
         display: flex;
-        height: 80px;
+        height: 120px;
         text-shadow: none;
         margin-top: 16px;
     }
@@ -56,6 +60,7 @@
 
         background: #2518;
         border: 1px solid #6a6;
+        border-radius: 4px;
         cursor: pointer;
         user-select: none;
 
@@ -68,7 +73,7 @@
         margin-right: 0;
     }
     .home-btn:hover {
-        background-color: #251e;
+        background-color: #382e;
     }
     @media (max-width: 600px) {
         .home-btn-area {

@@ -1,15 +1,9 @@
 ---
 layout: about
 title: 학원소개
+banner:
+  height: "67vh"         # Banner default height
 ---
-
-<style>
-  .post .post-content p.name {
-    text-align: center;
-    color: blue;
-    font-size: 200%;
-  }
-</style>
 
 ## 학원장 인사말
 
@@ -65,3 +59,11 @@ im4u 명문정보영재교육센터는 주요 대학 교수진이 집필한 교�
 ![학원 사진 2](/assets/images/moon_pica2.jpg)
 ![학원 사진 3](/assets/images/moon_pica3.jpg)
 ![학원 사진 4](/assets/images/moon_pica4.jpg)
+
+<style>
+  .post .post-content p.name {
+    text-align: center;
+    color: blue;
+    font-size: 200%;
+  }
+</style>
