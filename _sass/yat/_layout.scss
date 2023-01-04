@@ -632,6 +632,9 @@ html {
         @include media-query($on-palm) {
           @include relative-font-size(1.975);
         }
+        &.small-banner-heading {
+          @include relative-font-size(3.0);
+        }
       }
 
       > :nth-child(2) {

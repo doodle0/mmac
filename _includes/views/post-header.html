@@ -1,5 +1,13 @@
 <header class="post-header">
+    {%- assign name = 'small_banner_heading' -%}
+    {%- include functions.html func='get_value' -%}
+    {%- assign small_banner_heading = return -%}
+
+    {%- if small_banner_heading -%}
+    <h1 class="post-title p-name small-banner-heading" itemprop="name headline">{{ heading | default: page.title | escape }}</h1>
+    {%- else -%}
     <h1 class="post-title p-name" itemprop="name headline">{{ heading | default: page.title | escape }}</h1>
+    {%- endif -%}
     <h2 class="post-subtitle">{{ subheading | default: page.subtitle | escape }}</h2>
 
     {%- assign name = 'hidden' -%}
