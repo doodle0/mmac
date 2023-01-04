@@ -67,11 +67,4 @@ im4u 명문정보영재교육센터는 주요 대학 교수진이 집필한 교�
     color: blue;
     font-size: 200%;
   }
-
-  .detail {
-    list-style: "–  ";
-  }
-  p + ul {
-    margin-top: -16px;
-  }
 </style>

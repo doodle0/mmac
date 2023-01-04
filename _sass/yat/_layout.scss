@@ -25,6 +25,7 @@ html {
         @include media-query($on-laptop) {
           .page-link {
             color: $header-text-color;
+            text-shadow: none;
           }
 
           .menu-icon {
@@ -272,10 +273,14 @@ html {
 
     > li {
       margin-bottom: $spacing-unit * 1.5;
-      padding-bottom: 30px;
+      padding-bottom: $spacing-unit;
 
       &:not(:last-child) {
         border-bottom: 1px solid #e3e3e3;
+
+        @include media-query($on-laptop) {
+          border-bottom: none;
+        }
       }
     }
   }
@@ -316,6 +321,10 @@ html {
     @include relative-font-size(1.65);
     font-weight: $base-font-weight * 1.5;
     color: #333;
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.4);
+    }
   }
 
   .post-excerpt {
@@ -373,6 +382,22 @@ html {
 
     .indicator {
       padding: 0 15px;
+    }
+  }
+
+  @include media-query($on-laptop) {
+    .post-list > li {
+      margin-bottom: $spacing-unit;
+      padding-bottom: 0;
+      border-bottom: none;
+
+      .post-title {
+        margin-bottom: 0;
+      }
+
+      .post-meta {
+        margin-bottom: $spacing-unit * 0.25;
+      }
     }
   }
 }
@@ -629,11 +654,17 @@ html {
         font-weight: normal;
         transition: 0.2s all;
 
-        @include media-query($on-palm) {
-          @include relative-font-size(1.975);
-        }
         &.small-banner-heading {
           @include relative-font-size(3.0);
+
+          @include media-query($on-palm) {
+            @include relative-font-size(1.975);
+          }
+        }
+
+        @include media-query($on-palm) {
+          margin-top: calc($base-font-size * 2);
+          @include relative-font-size(1.975);
         }
       }
 
@@ -687,6 +718,68 @@ html {
 
         &:hover {
           text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .home-btn-area {
+    display: flex;
+    height: 120px;
+    text-shadow: none;
+    margin-top: 16px;
+
+    .home-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      flex-grow: 1;
+      flex: 1;
+      text-align: center;
+  
+      padding: 8px;
+      margin: 8px;
+  
+      background: #2518;
+      border: 1px solid #6a6;
+      border-radius: 4px;
+      cursor: pointer;
+      user-select: none;
+  
+      transition: 200ms ease;
+  
+  
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        background-color: #382e;
+      }
+  
+      .home-btn-heading {
+        letter-spacing: 1px;
+        font-weight: 600;
+        @include relative-font-size(1.2);
+      }
+    }
+
+    @include media-query($on-palm) {
+      flex-direction: column;
+
+      .home-btn {
+        margin: 0;
+        padding: 4px;
+
+        .home-btn-heading {
+          @include relative-font-size(1.0);
+        }
+
+        .home-btn-content {
+          @include relative-font-size(0.9);
         }
       }
     }
