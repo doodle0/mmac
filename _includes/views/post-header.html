@@ -8,12 +8,17 @@
     {%- else -%}
     <h1 class="post-title p-name" itemprop="name headline">{{ heading | default: page.title | escape }}</h1>
     {%- endif -%}
+
+    {%- if subheading or page.subtitle -%}
     <h2 class="post-subtitle">{{ subheading | default: page.subtitle | escape }}</h2>
+    {%- endif -%}
 
     {%- assign name = 'hidden' -%}
     {%- include functions.html func='get_value' -%}
     {%- assign hidden = return -%}
 
+    {%- assign result = hidden | where_exp: "item", "item == 'post_meta'" -%}
+    {%- if result.size == 0 -%}
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
@@ -27,6 +32,7 @@
       {% assign article = page.content %}
       {% assign lang = page.lang %}
     </p>
+    {%- endif -%}
   
     {%- if page.tags.size > 0 -%}
     <div class="post-tags">
